@@ -68,13 +68,19 @@ bindsym $mod+space focus mode_toggle
 # focus the parent container
 bindsym $mod+a focus parent
 
+# workspace variables
+
+set $workspace1 "Main"
+set $workspace2 "Media"
+set $workspace3 "Terminals"
+
 # focus the child container
 #bindsym $mod+d focus child
 
 # switch to workspace
-bindsym $mod+1 workspace 1
-bindsym $mod+2 workspace 2
-bindsym $mod+3 workspace 3
+bindsym $mod+1 workspace $workspace1
+bindsym $mod+2 workspace $workspace2
+bindsym $mod+3 workspace $workspace3
 bindsym $mod+4 workspace 4
 bindsym $mod+5 workspace 5
 bindsym $mod+6 workspace 6
@@ -173,5 +179,9 @@ bar {
 	}
 }
 
+
 # restore wallpaper
 exec --no-startup-id nitrogen --restore
+
+# startup programs 
+exec rhythmbox
