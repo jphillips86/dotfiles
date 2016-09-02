@@ -1,4 +1,4 @@
-# sphillips86 i3 Config
+# jsphillips86 i3 Config
 
 # set Mod to alt key
 set $mod Mod1
@@ -6,7 +6,7 @@ set $mod Mod1
 # font for window titles
 font pango:System San Francisco Display 9
 
-# Use Mouse+$mod to drag floating windows to their wanted position
+# use mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
 # start a terminal
